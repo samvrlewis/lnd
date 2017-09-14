@@ -1,0 +1,17 @@
+{
+    "package": {
+        "name": "auto-upload",
+        "repo": "myRepo",
+        "subject": "myBintrayUser"
+    },
+
+    "version": {
+        "name": "0.5"
+    },
+
+    "files":
+        [
+        {"includePattern": "./(.*logs\.tar.gz)"}
+        ],
+    "publish": true
+}
