@@ -1,0 +1,333 @@
+2017-09-13 20:17:52.159 [WRN] LTND: read /tmp/lndtest-data023625281: is a directory
+2017-09-13 20:17:52.160 [INF] LTND: Version 0.3.0-alpha
+2017-09-13 20:17:52.160 [INF] CHDB: Checking for schema update: latest_version=0, db_version=0
+2017-09-13 20:17:52.160 [INF] LTND: Primary chain is set to: bitcoin
+2017-09-13 20:17:56.021 [INF] LNWL: Opened wallet
+2017-09-13 20:17:57.389 [INF] LNWL: The wallet has been unlocked without a time limit
+2017-09-13 20:17:57.391 [INF] LTND: LightningWallet opened
+2017-09-13 20:17:57.391 [INF] LNWL: Catching up block hashes to height 368, this will take a while...
+2017-09-13 20:17:57.392 [INF] RPCS: Generating TLS certificates...
+2017-09-13 20:17:57.458 [INF] LNWL: Done catching up block hashes
+2017-09-13 20:17:57.458 [INF] LNWL: Started rescan from block 6b15e1a22ec48fd56375979b27fb5419bb1ddc24229f48dd8ac83a56612dba11 (height 368) for 0 addresses
+2017-09-13 20:17:57.459 [INF] LNWL: Finished rescan for 0 addresses (synced to block 6b15e1a22ec48fd56375979b27fb5419bb1ddc24229f48dd8ac83a56612dba11, height 368)
+2017-09-13 20:17:57.459 [INF] LNWL: Catching up block hashes to height 368, this might take a while
+2017-09-13 20:17:57.459 [INF] LNWL: Done catching up block hashes
+2017-09-13 20:17:59.440 [INF] RPCS: Done generating TLS certificates
+2017-09-13 20:17:59.442 [INF] RPCS: RPC server listening on 127.0.0.1:19562
+2017-09-13 20:17:59.443 [ERR] LTND: gRPC proxy unable to listen on localhost:8080
+2017-09-13 20:17:59.504 [INF] HSWC: Starting HTLC Switch
+2017-09-13 20:17:59.504 [INF] NTFN: New block epoch subscription
+2017-09-13 20:17:59.505 [INF] DISC: Authenticated Gossiper is starting
+2017-09-13 20:17:59.505 [INF] NTFN: New block epoch subscription
+2017-09-13 20:17:59.505 [INF] CRTR: FilteredChainView starting
+2017-09-13 20:17:59.566 [INF] CRTR: Prune tip for Channel Graph: height=0, hash=<nil>
+2017-09-13 20:17:59.566 [INF] CRTR: Filtering chain using 0 channels active
+2017-09-13 20:17:59.567 [INF] SRVR: Auto peer bootstrapping is disabled
+2017-09-13 20:17:59.567 [INF] CMGR: Server listening on [::]:19561
+2017-09-13 20:17:59.577 [INF] SRVR: New inbound connection from 127.0.0.1:49092
+2017-09-13 20:17:59.577 [INF] DISC: Syncing channel graph state with 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5, sending 1 vertexes and 0 edges
+2017-09-13 20:17:59.577 [INF] SRVR: Attempting to send msgs 1 to: 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:17:59.588 [INF] FNDG: Recv'd fundingRequest(amt=0.16777216 BTC, push=0 mSAT, delay=4, pendingId=8417d1ac79c50d4a93cae12d3fdf0386f9ac268ced2b2fcee660bcee3cad0478) from peer(03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5)
+2017-09-13 20:17:59.591 [INF] FNDG: Requiring 5 confirmations for pendingChan(8417d1ac79c50d4a93cae12d3fdf0386f9ac268ced2b2fcee660bcee3cad0478): amt=0.16777216 BTC, push_amt=0 mSAT
+2017-09-13 20:17:59.591 [INF] FNDG: Sending fundingResp for pendingID(8417d1ac79c50d4a93cae12d3fdf0386f9ac268ced2b2fcee660bcee3cad0478)
+2017-09-13 20:17:59.591 [INF] SRVR: Attempting to send msgs 1 to: 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:17:59.594 [INF] FNDG: completing pendingID(8417d1ac79c50d4a93cae12d3fdf0386f9ac268ced2b2fcee660bcee3cad0478) with ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0)
+2017-09-13 20:17:59.597 [INF] FNDG: sending signComplete for pendingID(8417d1ac79c50d4a93cae12d3fdf0386f9ac268ced2b2fcee660bcee3cad0478) over ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0)
+2017-09-13 20:17:59.597 [INF] SRVR: Attempting to send msgs 1 to: 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:17:59.597 [INF] NTFN: New block epoch subscription
+2017-09-13 20:17:59.597 [INF] NTFN: New confirmations subscription: txid=baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b, numconfs=5
+2017-09-13 20:17:59.597 [INF] NTFN: Attempting to trigger dispatch for baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b from historical chain
+2017-09-13 20:17:59.597 [INF] FNDG: Waiting for funding tx (baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b) to reach 5 confirmations
+2017-09-13 20:17:59.605 [INF] PEER: unable to read message from 127.0.0.1:49092: EOF
+2017-09-13 20:17:59.605 [ERR] SRVR: unable to get channel links: unable to locate channel link bydestination hop id 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:18:02.413 [INF] SRVR: New inbound connection from 127.0.0.1:49118
+2017-09-13 20:18:02.414 [INF] DISC: Syncing channel graph state with 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5, sending 1 vertexes and 0 edges
+2017-09-13 20:18:02.414 [INF] SRVR: Attempting to send msgs 1 to: 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:18:02.513 [INF] LTND: Received shutdown request.
+2017-09-13 20:18:02.513 [INF] LTND: Shutting down...
+2017-09-13 20:18:02.513 [INF] LTND: Gracefully shutting down the server...
+2017-09-13 20:18:02.513 [INF] FNDG: Funding manager shutting down
+2017-09-13 20:18:02.513 [WRN] FNDG: fundingManager shutting down, stopping funding flow for ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0)
+2017-09-13 20:18:02.513 [INF] NTFN: Cancelling epoch notification, epoch_id=3
+2017-09-13 20:18:02.514 [INF] CRTR: Channel Router shutting down
+2017-09-13 20:18:02.514 [INF] CRTR: FilteredChainView stopping
+2017-09-13 20:18:02.514 [INF] HSWC: HLTC Switch shutting down
+2017-09-13 20:18:02.514 [INF] UTXN: UTXO nursery shutting down
+2017-09-13 20:18:02.514 [INF] BRAR: Breach arbiter shutting down
+2017-09-13 20:18:02.514 [INF] DISC: Authenticated Gossiper is stopping
+2017-09-13 20:18:02.514 [INF] SRVR: Disconnecting from 127.0.0.1:49118
+2017-09-13 20:18:02.514 [INF] PEER: unable to read message from 127.0.0.1:49118: read tcp 127.0.0.1:19561->127.0.0.1:49118: use of closed network connection
+2017-09-13 20:18:02.514 [INF] LTND: Shutdown complete
+2017-09-13 20:18:02.564 [WRN] LTND: read /tmp/lndtest-data023625281: is a directory
+2017-09-13 20:18:02.564 [INF] LTND: Version 0.3.0-alpha
+2017-09-13 20:18:02.564 [INF] CHDB: Checking for schema update: latest_version=0, db_version=0
+2017-09-13 20:18:02.564 [INF] LTND: Primary chain is set to: bitcoin
+2017-09-13 20:18:03.804 [INF] LNWL: Opened wallet
+2017-09-13 20:18:05.187 [INF] LNWL: The wallet has been unlocked without a time limit
+2017-09-13 20:18:05.189 [INF] LTND: LightningWallet opened
+2017-09-13 20:18:05.189 [INF] LNWL: Started rescan from block 6b15e1a22ec48fd56375979b27fb5419bb1ddc24229f48dd8ac83a56612dba11 (height 368) for 5 addresses
+2017-09-13 20:18:05.190 [INF] LNWL: Finished rescan for 5 addresses (synced to block 6b15e1a22ec48fd56375979b27fb5419bb1ddc24229f48dd8ac83a56612dba11, height 368)
+2017-09-13 20:18:05.190 [INF] LNWL: Catching up block hashes to height 368, this might take a while
+2017-09-13 20:18:05.190 [INF] LNWL: Done catching up block hashes
+2017-09-13 20:18:05.193 [INF] RPCS: RPC server listening on 127.0.0.1:19562
+2017-09-13 20:18:05.194 [ERR] LTND: gRPC proxy unable to listen on localhost:8080
+2017-09-13 20:18:05.260 [INF] HSWC: Starting HTLC Switch
+2017-09-13 20:18:05.260 [INF] NTFN: New block epoch subscription
+2017-09-13 20:18:05.260 [INF] NTFN: New block epoch subscription
+2017-09-13 20:18:05.260 [INF] FNDG: Waiting for funding tx (baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b) to reach 5 confirmations
+2017-09-13 20:18:05.260 [INF] NTFN: New confirmations subscription: txid=baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b, numconfs=5
+2017-09-13 20:18:05.260 [INF] NTFN: Attempting to trigger dispatch for baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b from historical chain
+2017-09-13 20:18:05.261 [WRN] NTFN: unable to query for txid(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b): <nil>
+2017-09-13 20:18:05.261 [INF] BRAR: Retrieved 1 channels from database, watching with vigilance!
+2017-09-13 20:18:05.261 [INF] NTFN: New spend subscription: utxo=baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0
+2017-09-13 20:18:05.262 [INF] LNWL: Close observer for ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) active
+2017-09-13 20:18:05.262 [INF] DISC: Authenticated Gossiper is starting
+2017-09-13 20:18:05.262 [INF] NTFN: New block epoch subscription
+2017-09-13 20:18:05.262 [INF] CRTR: FilteredChainView starting
+2017-09-13 20:18:05.330 [INF] CRTR: Prune tip for Channel Graph: height=0, hash=<nil>
+2017-09-13 20:18:05.331 [INF] CRTR: Filtering chain using 0 channels active
+2017-09-13 20:18:05.331 [INF] SRVR: Auto peer bootstrapping is disabled
+2017-09-13 20:18:05.331 [INF] CMGR: Server listening on [::]:19561
+2017-09-13 20:18:05.339 [INF] NTFN: New block: height=369, sha=28e8f98d8e88a913c086cffde1f8270e51ba48c9c0d53a276e451b118168e8c2
+2017-09-13 20:18:05.340 [INF] CRTR: Pruning channel graph using block 28e8f98d8e88a913c086cffde1f8270e51ba48c9c0d53a276e451b118168e8c2 (height=369)
+2017-09-13 20:18:05.340 [INF] CRTR: Block 28e8f98d8e88a913c086cffde1f8270e51ba48c9c0d53a276e451b118168e8c2 (height=369) closed 0 channels
+2017-09-13 20:18:08.194 [INF] SRVR: New inbound connection from 127.0.0.1:49182
+2017-09-13 20:18:08.195 [ERR] CMGR: Unknown connection: 1
+2017-09-13 20:18:08.196 [INF] DISC: Syncing channel graph state with 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5, sending 1 vertexes and 0 edges
+2017-09-13 20:18:08.196 [INF] SRVR: Attempting to send msgs 1 to: 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:18:10.324 [INF] LTND: Received shutdown request.
+2017-09-13 20:18:10.324 [INF] LTND: Shutting down...
+2017-09-13 20:18:10.324 [INF] LTND: Gracefully shutting down the server...
+2017-09-13 20:18:10.324 [INF] FNDG: Funding manager shutting down
+2017-09-13 20:18:10.324 [INF] NTFN: Cancelling epoch notification, epoch_id=1
+2017-09-13 20:18:10.324 [WRN] FNDG: fundingManager shutting down, stopping funding flow for ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0)
+2017-09-13 20:18:10.324 [INF] CRTR: Channel Router shutting down
+2017-09-13 20:18:10.324 [INF] CRTR: FilteredChainView stopping
+2017-09-13 20:18:10.324 [INF] HSWC: HLTC Switch shutting down
+2017-09-13 20:18:10.324 [INF] UTXN: UTXO nursery shutting down
+2017-09-13 20:18:10.324 [INF] BRAR: Breach arbiter shutting down
+2017-09-13 20:18:10.324 [INF] DISC: Authenticated Gossiper is stopping
+2017-09-13 20:18:10.324 [INF] SRVR: Disconnecting from 127.0.0.1:49182
+2017-09-13 20:18:10.324 [INF] PEER: unable to read message from 127.0.0.1:49182: read tcp 127.0.0.1:19561->127.0.0.1:49182: use of closed network connection
+2017-09-13 20:18:10.324 [INF] LTND: Shutdown complete
+2017-09-13 20:18:10.376 [WRN] LTND: read /tmp/lndtest-data023625281: is a directory
+2017-09-13 20:18:10.376 [INF] LTND: Version 0.3.0-alpha
+2017-09-13 20:18:10.376 [INF] CHDB: Checking for schema update: latest_version=0, db_version=0
+2017-09-13 20:18:10.376 [INF] LTND: Primary chain is set to: bitcoin
+2017-09-13 20:18:11.617 [INF] LNWL: Opened wallet
+2017-09-13 20:18:13.002 [INF] LNWL: The wallet has been unlocked without a time limit
+2017-09-13 20:18:13.004 [INF] LTND: LightningWallet opened
+2017-09-13 20:18:13.005 [INF] LNWL: Started rescan from block 28e8f98d8e88a913c086cffde1f8270e51ba48c9c0d53a276e451b118168e8c2 (height 369) for 5 addresses
+2017-09-13 20:18:13.006 [INF] LNWL: Finished rescan for 5 addresses (synced to block 28e8f98d8e88a913c086cffde1f8270e51ba48c9c0d53a276e451b118168e8c2, height 369)
+2017-09-13 20:18:13.006 [INF] LNWL: Catching up block hashes to height 369, this might take a while
+2017-09-13 20:18:13.006 [INF] LNWL: Done catching up block hashes
+2017-09-13 20:18:13.009 [INF] RPCS: RPC server listening on 127.0.0.1:19562
+2017-09-13 20:18:13.009 [ERR] LTND: gRPC proxy unable to listen on localhost:8080
+2017-09-13 20:18:13.072 [INF] HSWC: Starting HTLC Switch
+2017-09-13 20:18:13.072 [INF] NTFN: New block epoch subscription
+2017-09-13 20:18:13.072 [INF] NTFN: New block epoch subscription
+2017-09-13 20:18:13.072 [INF] FNDG: Waiting for funding tx (baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b) to reach 5 confirmations
+2017-09-13 20:18:13.073 [INF] NTFN: New confirmations subscription: txid=baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b, numconfs=5
+2017-09-13 20:18:13.073 [INF] NTFN: Attempting to trigger dispatch for baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b from historical chain
+2017-09-13 20:18:13.074 [INF] BRAR: Retrieved 1 channels from database, watching with vigilance!
+2017-09-13 20:18:13.076 [INF] NTFN: New spend subscription: utxo=baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0
+2017-09-13 20:18:13.076 [INF] LNWL: Close observer for ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) active
+2017-09-13 20:18:13.076 [INF] DISC: Authenticated Gossiper is starting
+2017-09-13 20:18:13.077 [INF] NTFN: New block epoch subscription
+2017-09-13 20:18:13.077 [INF] CRTR: FilteredChainView starting
+2017-09-13 20:18:13.139 [INF] CRTR: Prune tip for Channel Graph: height=369, hash=28e8f98d8e88a913c086cffde1f8270e51ba48c9c0d53a276e451b118168e8c2
+2017-09-13 20:18:13.139 [INF] CRTR: Filtering chain using 0 channels active
+2017-09-13 20:18:13.140 [INF] SRVR: Auto peer bootstrapping is disabled
+2017-09-13 20:18:13.140 [INF] CMGR: Server listening on [::]:19561
+2017-09-13 20:18:15.327 [INF] SRVR: New inbound connection from 127.0.0.1:49238
+2017-09-13 20:18:15.328 [ERR] CMGR: Unknown connection: 1
+2017-09-13 20:18:15.338 [INF] DISC: Syncing channel graph state with 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5, sending 1 vertexes and 0 edges
+2017-09-13 20:18:15.338 [INF] SRVR: Attempting to send msgs 1 to: 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:18:15.342 [INF] NTFN: New block: height=370, sha=2b254c5423fa0db640c7b997e8275ca81680c83410bb40760d31b94103b9b163
+2017-09-13 20:18:15.343 [INF] NTFN: New block: height=371, sha=5ea5003d0a027e22a41597da9f8fb542f2e3e6ede8c8de7adcf1f06614a3b463
+2017-09-13 20:18:15.343 [INF] NTFN: New block: height=372, sha=2f3c82cfa10540a0a67d6739bc9d71c98a9624edcbaedd457513d05b3632a6d6
+2017-09-13 20:18:15.344 [INF] CRTR: Pruning channel graph using block 2b254c5423fa0db640c7b997e8275ca81680c83410bb40760d31b94103b9b163 (height=370)
+2017-09-13 20:18:15.344 [INF] CRTR: Block 2b254c5423fa0db640c7b997e8275ca81680c83410bb40760d31b94103b9b163 (height=370) closed 0 channels
+2017-09-13 20:18:15.344 [INF] CRTR: Pruning channel graph using block 5ea5003d0a027e22a41597da9f8fb542f2e3e6ede8c8de7adcf1f06614a3b463 (height=371)
+2017-09-13 20:18:15.344 [INF] CRTR: Block 5ea5003d0a027e22a41597da9f8fb542f2e3e6ede8c8de7adcf1f06614a3b463 (height=371) closed 0 channels
+2017-09-13 20:18:15.344 [INF] CRTR: Pruning channel graph using block 2f3c82cfa10540a0a67d6739bc9d71c98a9624edcbaedd457513d05b3632a6d6 (height=372)
+2017-09-13 20:18:15.344 [INF] CRTR: Block 2f3c82cfa10540a0a67d6739bc9d71c98a9624edcbaedd457513d05b3632a6d6 (height=372) closed 0 channels
+2017-09-13 20:18:16.349 [INF] NTFN: New block: height=373, sha=0947b8d2ccdb0e4b8174da942edbc4382e2c0d1296b43155013529c26ec0aa88
+2017-09-13 20:18:16.349 [INF] FNDG: ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) is now active: ChannelID(5b4571c319e5ac29a3cd026ec91967383bf78f210ea8c880b44d1acd4e43f8ba)
+2017-09-13 20:18:16.349 [INF] SRVR: Attempting to send msgs 1 to: 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:18:16.349 [INF] FNDG: Announcing ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0), short_chan_id=(*lnwire.ShortChannelID)(0xc4200141c0)({
+ BlockHeight: (uint32) 369,
+ TxIndex: (uint32) 1,
+ TxPosition: (uint16) 0
+})
+
+2017-09-13 20:18:16.350 [INF] CRTR: Pruning channel graph using block 0947b8d2ccdb0e4b8174da942edbc4382e2c0d1296b43155013529c26ec0aa88 (height=373)
+2017-09-13 20:18:16.350 [INF] CRTR: Block 0947b8d2ccdb0e4b8174da942edbc4382e2c0d1296b43155013529c26ec0aa88 (height=373) closed 0 channels
+2017-09-13 20:18:16.354 [INF] CRTR: New channel discovered! Link connects 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5 and 03bf0a9abd625af9b15efb78ad71e9f8131d11933d6a0a5645786f38298b04bfbc with ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0): chan_id=405719790714880, capacity=0.16777216 BTC
+2017-09-13 20:18:16.355 [INF] CRTR: New channel update applied: (*channeldb.ChannelEdgePolicy)(0xc4202b9860)({
+ Signature: (*btcec.Signature)(0xc42016e330)({
+  R: (*big.Int)(0xc420619fc0)(84486996274439335873547764109993566121630286089281812488762877660180254054408),
+  S: (*big.Int)(0xc420278060)(45315007728542360015568810573859895320203009298683124225864779618670663380677)
+ }),
+ ChannelID: (uint64) 405719790714880,
+ LastUpdate: (time.Time) 2017-09-13 20:18:16 +1000 AEST,
+ Flags: (uint16) 1,
+ TimeLockDelta: (uint16) 144,
+ MinHTLC: (lnwire.MilliSatoshi) 0 mSAT,
+ FeeBaseMSat: (lnwire.MilliSatoshi) 1000 mSAT,
+ FeeProportionalMillionths: (lnwire.MilliSatoshi) 1 mSAT,
+ Node: (*channeldb.LightningNode)(<nil>),
+ db: (*channeldb.DB)(<nil>)
+})
+
+2017-09-13 20:18:16.356 [INF] DISC: Received new channel announcement: (*lnwire.AnnounceSignatures)(0xc4202e8e40)({
+ ChannelID: (lnwire.ChannelID) (len=32 cap=32) 5b4571c319e5ac29a3cd026ec91967383bf78f210ea8c880b44d1acd4e43f8ba,
+ ShortChannelID: (lnwire.ShortChannelID) {
+  BlockHeight: (uint32) 369,
+  TxIndex: (uint32) 1,
+  TxPosition: (uint16) 0
+ },
+ NodeSignature: (*btcec.Signature)(0xc42016e340)({
+  R: (*big.Int)(0xc420278100)(94431199749725030851081891448831255382490491317341148018272758384653900822635),
+  S: (*big.Int)(0xc420278160)(7039214932454567994780814454326119357254791689221338825144985520962472311500)
+ }),
+ BitcoinSignature: (*btcec.Signature)(0xc42016e370)({
+  R: (*big.Int)(0xc420278740)(104616067005004893915710413517348949078888655033925975068198491375615351108482),
+  S: (*big.Int)(0xc420278800)(16792293738680280676857498587672924813576081571477121873940659585829101304868)
+ })
+})
+
+2017-09-13 20:18:16.367 [INF] SRVR: Attempting to send msgs 1 to: 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:18:16.367 [INF] DISC: Sent channel announcement proof for short_chan_id=405719790714880 to remote peer: 03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:18:16.367 [INF] DISC: 1/2 of channel ann proof received for short_chan_id=405719790714880, waiting for other half
+2017-09-13 20:18:16.367 [INF] DISC: Received new channel announcement: (*lnwire.AnnounceSignatures)(0xc4202e9000)({
+ ChannelID: (lnwire.ChannelID) (len=32 cap=32) 5b4571c319e5ac29a3cd026ec91967383bf78f210ea8c880b44d1acd4e43f8ba,
+ ShortChannelID: (lnwire.ShortChannelID) {
+  BlockHeight: (uint32) 369,
+  TxIndex: (uint32) 1,
+  TxPosition: (uint16) 0
+ },
+ NodeSignature: (*btcec.Signature)(0xc42016e530)({
+  R: (*big.Int)(0xc420278dc0)(36712460241820899647866055972433720876380579892551428076657585855360111135582),
+  S: (*big.Int)(0xc420278de0)(42124547756717602520456747334952098879809974445614048221286708819230990726398)
+ }),
+ BitcoinSignature: (*btcec.Signature)(0xc42016e540)({
+  R: (*big.Int)(0xc420278e00)(90613800300649037927657173067098750925512804097171197705101822071584175181675),
+  S: (*big.Int)(0xc420278e20)(50520947102516960588239363404656845016236939233511081326701519742214395454366)
+ })
+})
+
+2017-09-13 20:18:16.380 [INF] DISC: Fully valid channel proof for short_chan_id=405719790714880 constructed, adding to next ann batch
+2017-09-13 20:18:16.380 [INF] CRTR: Updated vertex data for node=03bf0a9abd625af9b15efb78ad71e9f8131d11933d6a0a5645786f38298b04bfbc
+2017-09-13 20:18:16.380 [INF] DISC: Broadcasting batch of 3 new announcements
+2017-09-13 20:18:16.381 [INF] NTFN: Cancelling epoch notification, epoch_id=1
+2017-09-13 20:18:16.382 [INF] NTFN: New spend subscription: utxo=baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0
+2017-09-13 20:18:16.382 [INF] PEER: New channel active ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) with peerId(1)
+2017-09-13 20:18:16.382 [INF] LNWL: Close observer for ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) active
+2017-09-13 20:18:16.382 [INF] BRAR: ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) is now live, abandoning state contract for live version
+2017-09-13 20:18:16.382 [INF] NTFN: New block epoch subscription
+2017-09-13 20:18:16.382 [INF] NTFN: Cancelling spend notification for out_point=baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0, spend_id=1
+2017-09-13 20:18:16.383 [INF] HSWC: ChannelLink(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) is starting
+2017-09-13 20:18:16.383 [INF] HSWC: HTLC manager for ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) started, bandwidth=0 mSAT
+2017-09-13 20:18:16.383 [INF] HSWC: Added channel link with chan_id=5b4571c319e5ac29a3cd026ec91967383bf78f210ea8c880b44d1acd4e43f8ba, short_chan_id=((lnwire.ShortChannelID) {
+ BlockHeight: (uint32) 369,
+ TxIndex: (uint32) 1,
+ TxPosition: (uint16) 0
+}
+), bandwidth=0 mSAT
+2017-09-13 20:18:16.537 [INF] CRTR: Updated vertex data for node=03678ca637909310e8848c4f3c0c79cf53d9b55ade75a453e912ea333f7a8ce5a5
+2017-09-13 20:18:16.542 [INF] CRTR: New channel update applied: (*channeldb.ChannelEdgePolicy)(0xc4205f43c0)({
+ Signature: (*btcec.Signature)(0xc4202e6e60)({
+  R: (*big.Int)(0xc420506220)(113264774264078731555444043996039110006414076253641221284901729304717732180951),
+  S: (*big.Int)(0xc420506240)(12701789255468679005831821879214146170702928531000196392993789795520104563744)
+ }),
+ ChannelID: (uint64) 405719790714880,
+ LastUpdate: (time.Time) 2017-09-13 20:18:16 +1000 AEST,
+ Flags: (uint16) 0,
+ TimeLockDelta: (uint16) 144,
+ MinHTLC: (lnwire.MilliSatoshi) 0 mSAT,
+ FeeBaseMSat: (lnwire.MilliSatoshi) 1000 mSAT,
+ FeeProportionalMillionths: (lnwire.MilliSatoshi) 1 mSAT,
+ Node: (*channeldb.LightningNode)(<nil>),
+ db: (*channeldb.DB)(<nil>)
+})
+
+2017-09-13 20:18:16.677 [INF] DISC: Broadcasting batch of 2 new announcements
+2017-09-13 20:18:17.354 [INF] RPCS: [listchannels] fetched 1 channels from DB
+2017-09-13 20:18:17.356 [INF] PEER: Delivery addr for channel close: sb1qlz4pc9wuddeq390waxc723txhyl3pqhh4r32re
+2017-09-13 20:18:17.356 [INF] HSWC: Removing channel link with ChannelID(5b4571c319e5ac29a3cd026ec91967383bf78f210ea8c880b44d1acd4e43f8ba)
+2017-09-13 20:18:17.357 [INF] HSWC: ChannelLink(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) is stopping
+2017-09-13 20:18:17.357 [INF] HSWC: ChannelLink(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) has exited
+2017-09-13 20:18:17.360 [INF] NTFN: Cancelling epoch notification, epoch_id=4
+2017-09-13 20:18:17.361 [INF] PEER: Broadcasting cooperative close tx: (*wire.MsgTx)(0xc420060a40)({
+ Version: (int32) 2,
+ TxIn: ([]*wire.TxIn) (len=1 cap=15) {
+  (*wire.TxIn)(0xc42070f860)({
+   PreviousOutPoint: (wire.OutPoint) baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0,
+   SignatureScript: ([]uint8) <nil>,
+   Witness: (wire.TxWitness) (len=4 cap=4) {
+    ([]uint8) <nil>,
+    ([]uint8) (len=71 cap=144) {
+     00000000  30 44 02 20 5e 54 9d ab  93 28 61 00 51 58 96 2d  |0D. ^T...(a.QX.-|
+     00000010  b0 ca 55 6d 54 e1 89 67  4f c5 f6 04 7e f6 33 31  |..UmT..gO...~.31|
+     00000020  f7 97 12 cf 02 20 16 d6  c2 78 2c ba 57 c6 5a 67  |..... ...x,.W.Zg|
+     00000030  a4 76 50 30 88 f6 23 03  ec af 67 b0 24 84 f1 6e  |.vP0..#...g.$..n|
+     00000040  96 4b 08 11 2d fc 01                              |.K..-..|
+    },
+    ([]uint8) (len=72 cap=144) {
+     00000000  30 45 02 21 00 f6 55 88  64 0d 2f d6 1c e0 cd e4  |0E.!..U.d./.....|
+     00000010  ef ea 12 ab fa 4f 82 1a  d6 f8 13 8a e8 8a e8 6e  |.....O.........n|
+     00000020  aa af 1e 8a 29 02 20 16  8d 13 1d a9 9d 69 bb 20  |....). ......i. |
+     00000030  b8 81 a2 74 3e 0c d2 79  29 47 74 53 5a 8b a9 dd  |...t>..y)GtSZ...|
+     00000040  47 5c 2c 1c 18 c0 63 01                           |G\,...c.|
+    },
+    ([]uint8) (len=71 cap=500) {
+     00000000  52 21 02 98 dd 22 d2 5f  a2 69 f4 4e dc 58 c9 b4  |R!..."._.i.N.X..|
+     00000010  1e cd a2 ee 38 9c cc 35  69 6c 95 5c c1 a6 73 99  |....8..5il.\..s.|
+     00000020  a6 70 6d 21 03 8f f9 28  7e 3b 45 a0 14 68 ea ab  |.pm!...(~;E..h..|
+     00000030  5f f7 7d 99 0d 0f f7 ad  67 f2 9c 54 a4 f8 63 b2  |_.}.....g..T..c.|
+     00000040  ab 81 8d 1a 88 52 ae                              |.....R.|
+    }
+   },
+   Sequence: (uint32) 4294967295
+  })
+ },
+ TxOut: ([]*wire.TxOut) (len=1 cap=15) {
+  (*wire.TxOut)(0xc4206180c0)({
+   Value: (int64) 16759840,
+   PkScript: ([]uint8) (len=22 cap=34) {
+    00000000  00 14 90 b7 bf ec 43 38  72 ec dc 2d 65 83 8e 19  |......C8r..-e...|
+    00000010  4a 86 b8 ae 84 44                                 |J....D|
+   }
+  })
+ },
+ LockTime: (uint32) 0
+})
+
+2017-09-13 20:18:17.362 [INF] NTFN: Cancelling spend notification for out_point=baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0, spend_id=2
+2017-09-13 20:18:17.366 [INF] PEER: channel close tx from ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0)  already exist, probably broadcasted by peer: -22: TX rejected: already have transaction e7f3a1ab89afa32a7e7e56f666eded6f07032356607d92d340bab237975a4b05
+2017-09-13 20:18:17.366 [INF] HSWC: Removing channel link with ChannelID(5b4571c319e5ac29a3cd026ec91967383bf78f210ea8c880b44d1acd4e43f8ba)
+2017-09-13 20:18:17.366 [WRN] PEER: unable remove channel link with ChannelPoint(5b4571c319e5ac29a3cd026ec91967383bf78f210ea8c880b44d1acd4e43f8ba): channel link not found
+2017-09-13 20:18:17.366 [ERR] BRAR: Unable to find contract: baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0
+2017-09-13 20:18:17.367 [INF] PEER: Waiting for confirmation of cooperative close of ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) with txid: e7f3a1ab89afa32a7e7e56f666eded6f07032356607d92d340bab237975a4b05
+2017-09-13 20:18:17.367 [INF] NTFN: New confirmations subscription: txid=e7f3a1ab89afa32a7e7e56f666eded6f07032356607d92d340bab237975a4b05, numconfs=1
+2017-09-13 20:18:17.367 [INF] NTFN: Attempting to trigger dispatch for e7f3a1ab89afa32a7e7e56f666eded6f07032356607d92d340bab237975a4b05 from historical chain
+2017-09-13 20:18:17.369 [WRN] NTFN: unable to query for txid(e7f3a1ab89afa32a7e7e56f666eded6f07032356607d92d340bab237975a4b05): <nil>
+2017-09-13 20:18:17.376 [INF] CRTR: Pruning channel graph using block 65cd916ec6289ca5100e0620b1162d4ee7c9910246fb621ea52d9d515601bcfb (height=374)
+2017-09-13 20:18:17.377 [INF] NTFN: New block: height=374, sha=65cd916ec6289ca5100e0620b1162d4ee7c9910246fb621ea52d9d515601bcfb
+2017-09-13 20:18:17.377 [INF] NTFN: Dispatching single conf notification, sha=e7f3a1ab89afa32a7e7e56f666eded6f07032356607d92d340bab237975a4b05, height=374
+2017-09-13 20:18:17.377 [INF] CRTR: Block 65cd916ec6289ca5100e0620b1162d4ee7c9910246fb621ea52d9d515601bcfb (height=374) closed 1 channels
+2017-09-13 20:18:17.377 [INF] PEER: ChannelPoint(baf8434ecd1a4db480c8a80e218ff73b386719c96e02cda329ace519c371455b:0) is now closed at height 374
+2017-09-13 20:18:17.379 [INF] LTND: Received shutdown request.
+2017-09-13 20:18:17.379 [INF] LTND: Shutting down...
+2017-09-13 20:18:17.379 [INF] LTND: Gracefully shutting down the server...
+2017-09-13 20:18:17.379 [INF] FNDG: Funding manager shutting down
+2017-09-13 20:18:17.379 [INF] CRTR: Channel Router shutting down
+2017-09-13 20:18:17.379 [INF] CRTR: FilteredChainView stopping
+2017-09-13 20:18:17.379 [INF] HSWC: HLTC Switch shutting down
+2017-09-13 20:18:17.379 [INF] UTXN: UTXO nursery shutting down
+2017-09-13 20:18:17.379 [INF] BRAR: Breach arbiter shutting down
+2017-09-13 20:18:17.379 [INF] DISC: Authenticated Gossiper is stopping
+2017-09-13 20:18:17.379 [INF] SRVR: Disconnecting from 127.0.0.1:49238
+2017-09-13 20:18:17.379 [INF] PEER: unable to read message from 127.0.0.1:49238: read tcp 127.0.0.1:19561->127.0.0.1:49238: use of closed network connection
+2017-09-13 20:18:17.379 [INF] LTND: Shutdown complete

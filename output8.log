@@ -1,0 +1,37 @@
+2017-09-13 20:19:39.087 [WRN] LTND: read /tmp/lndtest-data079339811: is a directory
+2017-09-13 20:19:39.087 [INF] LTND: Version 0.3.0-alpha
+2017-09-13 20:19:39.088 [INF] CHDB: Checking for schema update: latest_version=0, db_version=0
+2017-09-13 20:19:39.088 [INF] LTND: Primary chain is set to: bitcoin
+2017-09-13 20:19:43.027 [INF] LNWL: Opened wallet
+2017-09-13 20:19:44.433 [INF] LNWL: The wallet has been unlocked without a time limit
+2017-09-13 20:19:44.433 [INF] LNWL: Catching up block hashes to height 424, this will take a while...
+2017-09-13 20:19:44.434 [INF] LTND: LightningWallet opened
+2017-09-13 20:19:44.435 [INF] RPCS: Generating TLS certificates...
+2017-09-13 20:19:44.515 [INF] LNWL: Done catching up block hashes
+2017-09-13 20:19:44.517 [INF] LNWL: Started rescan from block 654a447b1d23c3e8e8801f686a458ef684a5e4b88a9feae8b25add1de1a33f1c (height 424) for 0 addresses
+2017-09-13 20:19:44.518 [INF] LNWL: Finished rescan for 0 addresses (synced to block 654a447b1d23c3e8e8801f686a458ef684a5e4b88a9feae8b25add1de1a33f1c, height 424)
+2017-09-13 20:19:44.518 [INF] LNWL: Catching up block hashes to height 424, this might take a while
+2017-09-13 20:19:44.519 [INF] LNWL: Done catching up block hashes
+2017-09-13 20:19:57.888 [INF] RPCS: Done generating TLS certificates
+2017-09-13 20:19:57.890 [INF] RPCS: RPC server listening on 127.0.0.1:19572
+2017-09-13 20:19:57.890 [ERR] LTND: gRPC proxy unable to listen on localhost:8080
+2017-09-13 20:19:57.946 [INF] HSWC: Starting HTLC Switch
+2017-09-13 20:19:57.946 [INF] NTFN: New block epoch subscription
+2017-09-13 20:19:57.947 [INF] DISC: Authenticated Gossiper is starting
+2017-09-13 20:19:57.947 [INF] NTFN: New block epoch subscription
+2017-09-13 20:19:57.947 [INF] CRTR: FilteredChainView starting
+2017-09-13 20:19:58.007 [INF] CRTR: Prune tip for Channel Graph: height=0, hash=<nil>
+2017-09-13 20:19:58.007 [INF] CRTR: Filtering chain using 0 channels active
+2017-09-13 20:19:58.007 [INF] SRVR: Auto peer bootstrapping is disabled
+2017-09-13 20:19:58.007 [INF] CMGR: Server listening on [::]:19571
+2017-09-13 20:19:58.013 [INF] LTND: Received shutdown request.
+2017-09-13 20:19:58.013 [INF] LTND: Shutting down...
+2017-09-13 20:19:58.013 [INF] LTND: Gracefully shutting down the server...
+2017-09-13 20:19:58.013 [INF] FNDG: Funding manager shutting down
+2017-09-13 20:19:58.013 [INF] CRTR: Channel Router shutting down
+2017-09-13 20:19:58.013 [INF] CRTR: FilteredChainView stopping
+2017-09-13 20:19:58.013 [INF] HSWC: HLTC Switch shutting down
+2017-09-13 20:19:58.013 [INF] UTXN: UTXO nursery shutting down
+2017-09-13 20:19:58.013 [INF] BRAR: Breach arbiter shutting down
+2017-09-13 20:19:58.013 [INF] DISC: Authenticated Gossiper is stopping
+2017-09-13 20:19:58.013 [INF] LTND: Shutdown complete
