@@ -1,6 +1,6 @@
 package main
 
-import "github.com/lightningnetwork/lnd/lnwire"
+import "github.com/samvrlewis/lnd/lnwire"
 
 // globalFeatures feature vector which affects HTLCs and thus are also
 // advertised to other nodes.

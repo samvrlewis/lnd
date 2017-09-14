@@ -26,8 +26,8 @@ import (
 	"os/exec"
 
 	"github.com/go-errors/errors"
-	"github.com/lightningnetwork/lnd/lnrpc"
-	"github.com/lightningnetwork/lnd/macaroons"
+	"github.com/samvrlewis/lnd/lnrpc"
+	"github.com/samvrlewis/lnd/macaroons"
 	"github.com/roasbeef/btcd/chaincfg"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/integration/rpctest"

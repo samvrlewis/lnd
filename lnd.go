@@ -29,12 +29,12 @@ import (
 
 	flags "github.com/btcsuite/go-flags"
 	proxy "github.com/grpc-ecosystem/grpc-gateway/runtime"
-	"github.com/lightningnetwork/lnd/autopilot"
-	"github.com/lightningnetwork/lnd/channeldb"
-	"github.com/lightningnetwork/lnd/lnrpc"
-	"github.com/lightningnetwork/lnd/lnwallet"
-	"github.com/lightningnetwork/lnd/lnwire"
-	"github.com/lightningnetwork/lnd/macaroons"
+	"github.com/samvrlewis/lnd/autopilot"
+	"github.com/samvrlewis/lnd/channeldb"
+	"github.com/samvrlewis/lnd/lnrpc"
+	"github.com/samvrlewis/lnd/lnwallet"
+	"github.com/samvrlewis/lnd/lnwire"
+	"github.com/samvrlewis/lnd/macaroons"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcutil"
 )

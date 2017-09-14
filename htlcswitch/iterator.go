@@ -5,7 +5,7 @@ import (
 	"io"
 
 	"github.com/lightningnetwork/lightning-onion"
-	"github.com/lightningnetwork/lnd/lnwire"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 // NetworkHop indicates the blockchain network that is intended to be the next

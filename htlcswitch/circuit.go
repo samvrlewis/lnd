@@ -7,7 +7,7 @@ import (
 	"sync"
 
 	"github.com/go-errors/errors"
-	"github.com/lightningnetwork/lnd/lnwire"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 // circuitKey uniquely identifies an active circuit between two open channels.

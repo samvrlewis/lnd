@@ -4,7 +4,7 @@ import (
 	"container/list"
 	"sync"
 
-	"github.com/lightningnetwork/lnd/lnwire"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 // packetQueue represent the wrapper around the original queue plus the

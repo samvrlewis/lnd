@@ -34,7 +34,7 @@ for i in $SYS; do
     cd $PACKAGE-$i-$TAG
     echo "Building:" $OS $ARCH
     env GOOS=$OS GOARCH=$ARCH go build -v github.com/lightningnetwork/lnd
-    env GOOS=$OS GOARCH=$ARCH go build -v github.com/lightningnetwork/lnd/cmd/lncli
+    env GOOS=$OS GOARCH=$ARCH go build -v github.com/samvrlewis/lnd/cmd/lncli
     cd ..
     if [[ $OS = "windows" ]]; then
 	zip -r $PACKAGE-$i-$TAG.zip $PACKAGE-$i-$TAG

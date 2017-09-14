@@ -13,20 +13,20 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/lightningnetwork/lightning-onion"
-	"github.com/lightningnetwork/lnd/autopilot"
-	"github.com/lightningnetwork/lnd/brontide"
-	"github.com/lightningnetwork/lnd/channeldb"
-	"github.com/lightningnetwork/lnd/discovery"
-	"github.com/lightningnetwork/lnd/lnrpc"
-	"github.com/lightningnetwork/lnd/lnwire"
-	"github.com/lightningnetwork/lnd/routing"
+	"github.com/samvrlewis/lnd/autopilot"
+	"github.com/samvrlewis/lnd/brontide"
+	"github.com/samvrlewis/lnd/channeldb"
+	"github.com/samvrlewis/lnd/discovery"
+	"github.com/samvrlewis/lnd/lnrpc"
+	"github.com/samvrlewis/lnd/lnwire"
+	"github.com/samvrlewis/lnd/routing"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/connmgr"
 	"github.com/roasbeef/btcutil"
 
 	"github.com/go-errors/errors"
-	"github.com/lightningnetwork/lnd/htlcswitch"
+	"github.com/samvrlewis/lnd/htlcswitch"
 )
 
 // server is the main server of the Lightning Network Daemon. The server houses
