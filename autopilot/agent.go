@@ -5,9 +5,9 @@ import (
 	"sync/atomic"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 // Config couples all the items that that an autopilot agent needs to function.

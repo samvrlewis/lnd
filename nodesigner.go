@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
+	"github.com/samvrlewis/lnd/lnwallet"
 )
 
 // nodeSigner is an implementation of the MessageSigner interface backed by the

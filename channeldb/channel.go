@@ -9,12 +9,12 @@ import (
 	"sync"
 
 	"github.com/boltdb/bolt"
-	"github.com/samvrlewis/lnd/lnwire"
-	"github.com/samvrlewis/lnd/shachain"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/lnwire"
+	"github.com/samvrlewis/lnd/shachain"
 )
 
 var (

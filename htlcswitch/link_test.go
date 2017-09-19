@@ -14,10 +14,10 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/go-errors/errors"
-	"github.com/samvrlewis/lnd/lnwallet"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/lnwallet"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 const (

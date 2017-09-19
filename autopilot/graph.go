@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/samvrlewis/lnd/channeldb"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/channeldb"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 var (

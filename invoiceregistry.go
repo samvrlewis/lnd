@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/samvrlewis/lnd/channeldb"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/channeldb"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 var (

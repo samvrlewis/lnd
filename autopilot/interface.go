@@ -3,10 +3,10 @@ package autopilot
 import (
 	"net"
 
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 // Node node is an interface which represents n abstract vertex within the

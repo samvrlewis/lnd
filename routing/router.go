@@ -9,13 +9,13 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/roasbeef/btcd/btcec"
+	"github.com/roasbeef/btcd/wire"
+	"github.com/roasbeef/btcutil"
 	"github.com/samvrlewis/lnd/channeldb"
 	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/samvrlewis/lnd/routing/chainview"
-	"github.com/roasbeef/btcd/btcec"
-	"github.com/roasbeef/btcd/wire"
-	"github.com/roasbeef/btcutil"
 
 	"crypto/sha256"
 

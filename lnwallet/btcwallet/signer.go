@@ -4,7 +4,6 @@ import (
 	"fmt"
 
 	"github.com/go-errors/errors"
-	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/txscript"
@@ -12,6 +11,7 @@ import (
 	"github.com/roasbeef/btcutil"
 	"github.com/roasbeef/btcwallet/waddrmgr"
 	base "github.com/roasbeef/btcwallet/wallet"
+	"github.com/samvrlewis/lnd/lnwallet"
 )
 
 // FetchInputInfo queries for the WalletController's knowledge of the passed

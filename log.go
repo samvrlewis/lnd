@@ -11,6 +11,7 @@ import (
 	"github.com/btcsuite/btclog"
 	"github.com/jrick/logrotate/rotator"
 	"github.com/lightninglabs/neutrino"
+	"github.com/roasbeef/btcd/connmgr"
 	"github.com/samvrlewis/lnd/autopilot"
 	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/samvrlewis/lnd/channeldb"
@@ -18,7 +19,6 @@ import (
 	"github.com/samvrlewis/lnd/htlcswitch"
 	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/samvrlewis/lnd/routing"
-	"github.com/roasbeef/btcd/connmgr"
 )
 
 // logWriter implements an io.Writer that outputs to both standard output and

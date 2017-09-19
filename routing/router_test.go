@@ -8,13 +8,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/samvrlewis/lnd/channeldb"
 	"github.com/roasbeef/btcd/wire"
+	"github.com/samvrlewis/lnd/channeldb"
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/lightningnetwork/lightning-onion"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 type testCtx struct {

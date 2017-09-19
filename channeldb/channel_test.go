@@ -10,14 +10,14 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/samvrlewis/lnd/lnwire"
-	"github.com/samvrlewis/lnd/shachain"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
 	_ "github.com/roasbeef/btcwallet/walletdb/bdb"
+	"github.com/samvrlewis/lnd/lnwire"
+	"github.com/samvrlewis/lnd/shachain"
 )
 
 var (

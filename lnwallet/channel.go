@@ -11,11 +11,11 @@ import (
 	"sync/atomic"
 
 	"github.com/davecgh/go-spew/spew"
+	"github.com/roasbeef/btcd/blockchain"
+	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/samvrlewis/lnd/channeldb"
 	"github.com/samvrlewis/lnd/lnwire"
-	"github.com/roasbeef/btcd/blockchain"
-	"github.com/roasbeef/btcd/chaincfg/chainhash"
 
 	"encoding/hex"
 

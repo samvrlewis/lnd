@@ -5,15 +5,15 @@ import (
 	"time"
 
 	"github.com/btcsuite/btclog"
+	"github.com/roasbeef/btcd/btcec"
+	"github.com/roasbeef/btcd/txscript"
+	"github.com/roasbeef/btcd/wire"
 	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/samvrlewis/lnd/channeldb"
 	"github.com/samvrlewis/lnd/htlcswitch"
 	"github.com/samvrlewis/lnd/lnrpc"
 	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/samvrlewis/lnd/lnwire"
-	"github.com/roasbeef/btcd/btcec"
-	"github.com/roasbeef/btcd/txscript"
-	"github.com/roasbeef/btcd/wire"
 )
 
 func disablePeerLogger(t *testing.T) {

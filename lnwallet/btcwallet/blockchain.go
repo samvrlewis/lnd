@@ -9,9 +9,9 @@ import (
 	"github.com/roasbeef/btcd/wire"
 
 	"github.com/lightninglabs/neutrino"
-	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/roasbeef/btcwallet/chain"
 	"github.com/roasbeef/btcwallet/waddrmgr"
+	"github.com/samvrlewis/lnd/lnwallet"
 )
 
 var (

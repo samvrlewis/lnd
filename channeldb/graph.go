@@ -9,11 +9,11 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 var (

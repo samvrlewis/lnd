@@ -15,6 +15,11 @@ import (
 	"bytes"
 
 	"github.com/go-errors/errors"
+	"github.com/roasbeef/btcd/btcec"
+	"github.com/roasbeef/btcd/chaincfg/chainhash"
+	"github.com/roasbeef/btcd/connmgr"
+	"github.com/roasbeef/btcd/txscript"
+	"github.com/roasbeef/btcd/wire"
 	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/samvrlewis/lnd/channeldb"
 	"github.com/samvrlewis/lnd/htlcswitch"
@@ -22,11 +27,6 @@ import (
 	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/samvrlewis/lnd/routing"
-	"github.com/roasbeef/btcd/btcec"
-	"github.com/roasbeef/btcd/chaincfg/chainhash"
-	"github.com/roasbeef/btcd/connmgr"
-	"github.com/roasbeef/btcd/txscript"
-	"github.com/roasbeef/btcd/wire"
 )
 
 var (

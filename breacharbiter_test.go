@@ -12,13 +12,13 @@ import (
 	"testing"
 
 	"github.com/btcsuite/btclog"
-	"github.com/samvrlewis/lnd/channeldb"
-	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/txscript"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/channeldb"
+	"github.com/samvrlewis/lnd/lnwallet"
 )
 
 var (

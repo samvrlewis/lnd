@@ -8,9 +8,9 @@ import (
 
 	"github.com/btcsuite/fastsha256"
 	"github.com/go-errors/errors"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/wire"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 var (

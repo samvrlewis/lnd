@@ -8,10 +8,10 @@ import (
 
 	prand "math/rand"
 
-	"github.com/samvrlewis/lnd/channeldb"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/channeldb"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 func TestConstrainedPrefAttachmentNeedMoreChan(t *testing.T) {

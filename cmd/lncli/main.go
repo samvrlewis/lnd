@@ -11,9 +11,9 @@ import (
 	"gopkg.in/macaroon-bakery.v1/bakery/checkers"
 	"gopkg.in/macaroon.v1"
 
+	"github.com/roasbeef/btcutil"
 	"github.com/samvrlewis/lnd/lnrpc"
 	"github.com/samvrlewis/lnd/macaroons"
-	"github.com/roasbeef/btcutil"
 	"github.com/urfave/cli"
 
 	"google.golang.org/grpc"

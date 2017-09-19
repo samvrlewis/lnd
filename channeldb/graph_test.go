@@ -15,10 +15,10 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/wire"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 var (

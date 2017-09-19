@@ -109,7 +109,7 @@ set -e
 print "====+ Start +===="
 
 # Read input flags and initialize variables
-NEED_LINT="false"
+NEED_LINT="true"
 NEED_COVERAGE="false"
 NEED_RACE="false"
 NEED_INSTALL="false"

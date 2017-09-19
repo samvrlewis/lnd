@@ -8,7 +8,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
@@ -19,6 +18,7 @@ import (
 	"github.com/roasbeef/btcwallet/waddrmgr"
 	base "github.com/roasbeef/btcwallet/wallet"
 	"github.com/roasbeef/btcwallet/walletdb"
+	"github.com/samvrlewis/lnd/lnwallet"
 )
 
 const (

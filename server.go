@@ -13,6 +13,10 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/lightningnetwork/lightning-onion"
+	"github.com/roasbeef/btcd/btcec"
+	"github.com/roasbeef/btcd/chaincfg/chainhash"
+	"github.com/roasbeef/btcd/connmgr"
+	"github.com/roasbeef/btcutil"
 	"github.com/samvrlewis/lnd/autopilot"
 	"github.com/samvrlewis/lnd/brontide"
 	"github.com/samvrlewis/lnd/channeldb"
@@ -20,10 +24,6 @@ import (
 	"github.com/samvrlewis/lnd/lnrpc"
 	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/samvrlewis/lnd/routing"
-	"github.com/roasbeef/btcd/btcec"
-	"github.com/roasbeef/btcd/chaincfg/chainhash"
-	"github.com/roasbeef/btcd/connmgr"
-	"github.com/roasbeef/btcutil"
 
 	"github.com/go-errors/errors"
 	"github.com/samvrlewis/lnd/htlcswitch"

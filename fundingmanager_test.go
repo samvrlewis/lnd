@@ -12,14 +12,14 @@ import (
 	"time"
 
 	"github.com/btcsuite/btclog"
+	"github.com/roasbeef/btcd/chaincfg"
+	"github.com/roasbeef/btcd/chaincfg/chainhash"
+	_ "github.com/roasbeef/btcwallet/walletdb/bdb"
 	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/samvrlewis/lnd/channeldb"
 	"github.com/samvrlewis/lnd/lnrpc"
 	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/samvrlewis/lnd/lnwire"
-	"github.com/roasbeef/btcd/chaincfg"
-	"github.com/roasbeef/btcd/chaincfg/chainhash"
-	_ "github.com/roasbeef/btcwallet/walletdb/bdb"
 
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/wire"

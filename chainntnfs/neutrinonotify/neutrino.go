@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"github.com/lightninglabs/neutrino"
-	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/rpcclient"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
 	"github.com/roasbeef/btcutil/gcs/builder"
 	"github.com/roasbeef/btcwallet/waddrmgr"
+	"github.com/samvrlewis/lnd/chainntnfs"
 )
 
 const (

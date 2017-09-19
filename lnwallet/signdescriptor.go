@@ -5,10 +5,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/txscript"
 	"github.com/roasbeef/btcd/wire"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 var (

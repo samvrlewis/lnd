@@ -16,9 +16,9 @@ import (
 	"github.com/awalterschulze/gographviz"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
-	"github.com/samvrlewis/lnd/lnrpc"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/lnrpc"
 	"github.com/urfave/cli"
 	"golang.org/x/net/context"
 )

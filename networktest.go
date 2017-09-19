@@ -26,8 +26,6 @@ import (
 	"os/exec"
 
 	"github.com/go-errors/errors"
-	"github.com/samvrlewis/lnd/lnrpc"
-	"github.com/samvrlewis/lnd/macaroons"
 	"github.com/roasbeef/btcd/chaincfg"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/integration/rpctest"
@@ -35,6 +33,8 @@ import (
 	"github.com/roasbeef/btcd/txscript"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/lnrpc"
+	"github.com/samvrlewis/lnd/macaroons"
 )
 
 var (

@@ -9,10 +9,10 @@ import (
 	"strings"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/samvrlewis/lnd/autopilot"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcutil/bech32"
+	"github.com/samvrlewis/lnd/autopilot"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 // NetworkPeerBootstrapper is an interface that represents an initial peer

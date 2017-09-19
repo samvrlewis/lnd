@@ -1,9 +1,9 @@
 package lnwallet
 
 import (
+	"github.com/roasbeef/btcd/chaincfg"
 	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/samvrlewis/lnd/channeldb"
-	"github.com/roasbeef/btcd/chaincfg"
 )
 
 // Config is a struct which houses configuration parameters which modify the

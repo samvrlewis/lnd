@@ -3,10 +3,10 @@ package btcwallet
 import (
 	"path/filepath"
 
-	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/roasbeef/btcd/chaincfg"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/lnwallet"
 
 	"github.com/roasbeef/btcwallet/chain"
 

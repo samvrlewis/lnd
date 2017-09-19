@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/lightninglabs/neutrino"
-	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcwallet/walletdb"
+	"github.com/samvrlewis/lnd/chainntnfs"
 
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg"

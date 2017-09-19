@@ -3,8 +3,8 @@ package btcdnotify
 import (
 	"fmt"
 
-	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/roasbeef/btcd/rpcclient"
+	"github.com/samvrlewis/lnd/chainntnfs"
 )
 
 // createNewNotifier creates a new instance of the ChainNotifier interface

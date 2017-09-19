@@ -11,14 +11,14 @@ import (
 	prand "math/rand"
 
 	"github.com/go-errors/errors"
-	"github.com/samvrlewis/lnd/channeldb"
-	"github.com/samvrlewis/lnd/lnwallet"
-	"github.com/samvrlewis/lnd/lnwire"
-	"github.com/samvrlewis/lnd/routing/chainview"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/channeldb"
+	"github.com/samvrlewis/lnd/lnwallet"
+	"github.com/samvrlewis/lnd/lnwire"
+	"github.com/samvrlewis/lnd/routing/chainview"
 )
 
 var (

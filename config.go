@@ -13,10 +13,10 @@ import (
 	"time"
 
 	flags "github.com/btcsuite/go-flags"
-	"github.com/samvrlewis/lnd/brontide"
-	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcutil"
+	"github.com/samvrlewis/lnd/brontide"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 const (
