@@ -24,11 +24,12 @@ env:
     - RACE=true
 deploy:
   provider: bintray
-  file: "Path to a descriptor file, containing information for the Bintray upload"
-  user: "Bintray user"
-  key: "Bintray API key"
-  passphrase: "Optional. In case a passphrase is configured on Bintray and GPG signing is used"
-  dry-run: "Optional. If true, skips sending requests to Bintray. Useful for testing your configuration
+  file: "./.bintray_deploy.json"
+  user: "sam.vr.lewis@gmail.com"
+  key:
+    secure: "lKp5D2H3ee0cFhM7xFrOe2tdqNMSymXSttvzesrtc2XNLTkq6b0LQ6sC7cYdKn/CqzOA5lY/ZlSBe7TrGBpfGvw1nswilLCDVRZKvFiE8qlwvZg4fmLZHRQfn6co2KSbOZEHat1+xY3cvt/FY/d1HQ5GdfeQzpCLaM6sr/hTrtVe+q+bGliVWHYBYUfal46tl6ka1VH1TUo0Og++mAT/c92SfVBJlIQm6++z9bbMY6R/lCBsbDmgQTYRgiyvnSsUS8orInyvdnjNRh1mPeNGtKiwFMXRd0SyHNCmpokJf8ez+tSVt4OoRbCRbAFOUO6g2Owf/8opNf5yLT1IZ3L49xW6e9dKO7hPOofH8J4YAz2r64ZGeTca2TGRBKw+ADK3gfVlPPP2aMGP7b8j9GMJ0xgyojz2brkf3gJRJQgsRTZ4HP4eR8AA++N6bVK5ib2uAN7MTtr3zKrlPg9thyf3LRjWPfMzOjgWO7pojpyeGSEiPxSF0/tR5XxykeruT1RI0zxISTxEVnow5DxLKUDBl24wdW0Z6ClVxfABBO0b+0kuhdiC3OEDJj8yPjKeY+QuLezQij8O9QmzzYtorKd/FJF5iTGnw2uj/miuoEGj8/1wXQ0YDprM5u+3VJN5DwOR5aIL7wfeJ8IYKQyieLtMbaty3nof7TqKLvRCEX8oLXw="
+  on:
+    all_branches: true
 script:
   - export PATH=$PATH:$HOME/gopath/bin
   - ./gotest.sh
