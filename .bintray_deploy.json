@@ -1,8 +1,8 @@
 {
     "package": {
-        "name": "auto-upload",
-        "repo": "myRepo",
-        "subject": "myBintrayUser"
+        "name": "lnd",
+        "repo": "lnd",
+        "subject": "sam.vr.lewis@gmail.com"
     },
 
     "version": {
