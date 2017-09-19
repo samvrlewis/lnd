@@ -9,8 +9,8 @@ import (
 	"strings"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/lightningnetwork/lnd/autopilot"
-	"github.com/lightningnetwork/lnd/lnwire"
+	"github.com/samvrlewis/lnd/autopilot"
+	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcutil/bech32"
 )
@@ -235,7 +235,7 @@ func (c *ChannelGraphBootstrapper) Name() string {
 // interface which implements peer bootstrapping via a spcial DNS seed as
 // defined in BOLT-0010. For further details concerning Lightning's current DNS
 // boot strapping protocol, see this link:
-//     * https://github.com/lightningnetwork/lightning-rfc/blob/master/10-dns-bootstrap.md
+//     * https://github.com/samvrlewis/lightning-rfc/blob/master/10-dns-bootstrap.md
 type DNSSeedBootstrapper struct {
 	dnsSeeds []string
 }

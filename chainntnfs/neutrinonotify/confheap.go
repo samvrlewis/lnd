@@ -1,6 +1,6 @@
 package neutrinonotify
 
-import "github.com/lightningnetwork/lnd/chainntnfs"
+import "github.com/samvrlewis/lnd/chainntnfs"
 
 // confEntry represents an entry in the min-confirmation heap. .
 type confEntry struct {

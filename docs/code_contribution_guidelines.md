@@ -94,7 +94,7 @@ Note that the core design of the Lightning Network has shifted over time as
 concrete implementation and design has expanded our knowledge beyond the
 original white paper. Therefore, specific information outlined in the resources
 above may be a bit out of date. Many implementers are currently working on an
-initial [Version 1 Specification](https://medium.com/@lightningnetwork/lightning-network-meeting-on-interoperability-and-specifications-ea49e47696a4).
+initial [Version 1 Specification](https://medium.com/@samvrlewis/lightning-network-meeting-on-interoperability-and-specifications-ea49e47696a4).
 Once the specification is finalized, it will be the most up-to-date
 comprehensive document explaining the Lightning Network. As a result, it will
 be recommened for newcomers to read first in order to get up to speed. 
@@ -156,13 +156,13 @@ A quick summary of test practices follows:
 - When you fix a bug, it should be accompanied by tests which exercise the bug
   to both prove it has been resolved and to prevent future regressions
 - Changes to publicly exported packages such as
-  [brontide](https://github.com/lightningnetwork/lnd/tree/master/brontide) should
+  [brontide](https://github.com/samvrlewis/lnd/tree/master/brontide) should
   be accompanied by unit tests exercising the new or changed behavior.
 - Changes to behavior within the daemon's interaction with the P2P protocol,
   or RPC's will need to be accompanied by integration tests which use the
-  [`networkHarness`framework](https://github.com/lightningnetwork/lnd/blob/master/networktest.go)
+  [`networkHarness`framework](https://github.com/samvrlewis/lnd/blob/master/networktest.go)
   contained within `lnd`. For example integration tests, see
-  [`lnd_test.go`](https://github.com/lightningnetwork/lnd/blob/master/lnd_test.go#L181). 
+  [`lnd_test.go`](https://github.com/samvrlewis/lnd/blob/master/lnd_test.go#L181). 
 
 <a name="CodeDocumentation" />
 
@@ -438,7 +438,7 @@ keep a clean commit history over a tangled weave of merge commits.  However,
 regardless of the specific merge method used, the code will be integrated with
 the master branch and the pull request will be closed.
 
-Rejoice as you will now be listed as a [contributor](https://github.com/lightningnetwork/lnd/graphs/contributors)!
+Rejoice as you will now be listed as a [contributor](https://github.com/samvrlewis/lnd/graphs/contributors)!
 
 <a name="Standards" />
 
@@ -468,7 +468,7 @@ Rejoice as you will now be listed as a [contributor](https://github.com/lightnin
 #### 6.2. Licensing of Contributions
 ****
 All contributions must be licensed with the
-[MIT license](https://github.com/lightningnetwork/lnd/blob/master/LICENSE).  This is
+[MIT license](https://github.com/samvrlewis/lnd/blob/master/LICENSE).  This is
 the same license as all of the code found within lnd.
 
 

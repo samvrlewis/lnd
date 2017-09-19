@@ -33,7 +33,7 @@ for i in $SYS; do
     mkdir $PACKAGE-$i-$TAG
     cd $PACKAGE-$i-$TAG
     echo "Building:" $OS $ARCH
-    env GOOS=$OS GOARCH=$ARCH go build -v github.com/lightningnetwork/lnd
+    env GOOS=$OS GOARCH=$ARCH go build -v github.com/samvrlewis/lnd
     env GOOS=$OS GOARCH=$ARCH go build -v github.com/samvrlewis/lnd/cmd/lncli
     cd ..
     if [[ $OS = "windows" ]]; then

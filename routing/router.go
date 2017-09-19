@@ -9,10 +9,10 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/lightningnetwork/lnd/channeldb"
-	"github.com/lightningnetwork/lnd/lnwallet"
-	"github.com/lightningnetwork/lnd/lnwire"
-	"github.com/lightningnetwork/lnd/routing/chainview"
+	"github.com/samvrlewis/lnd/channeldb"
+	"github.com/samvrlewis/lnd/lnwallet"
+	"github.com/samvrlewis/lnd/lnwire"
+	"github.com/samvrlewis/lnd/routing/chainview"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"
@@ -20,7 +20,7 @@ import (
 	"crypto/sha256"
 
 	"github.com/go-errors/errors"
-	"github.com/lightningnetwork/lightning-onion"
+	"github.com/samvrlewis/lightning-onion"
 )
 
 // ChannelGraphSource represent the source of information about the topology of

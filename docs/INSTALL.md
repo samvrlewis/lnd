@@ -1,7 +1,7 @@
 # Installation
 
 ### Preliminaries
-  In order to work with [`lnd`](https://github.com/lightningnetwork/lnd), the
+  In order to work with [`lnd`](https://github.com/samvrlewis/lnd), the
   following build dependencies are required:
   
   * **Go:** `lnd` is written in Go. To install, run one of the following commands:
@@ -50,8 +50,8 @@
 With the preliminary steps completed, to install `lnd`, `lncli`, and all
 related dependencies run the following commands:
 ```
-git clone https://github.com/lightningnetwork/lnd $GOPATH/src/github.com/lightningnetwork/lnd
-cd $GOPATH/src/github.com/lightningnetwork/lnd
+git clone https://github.com/samvrlewis/lnd $GOPATH/src/github.com/samvrlewis/lnd
+cd $GOPATH/src/github.com/samvrlewis/lnd
 glide install
 go install . ./cmd/...
 ```
@@ -61,7 +61,7 @@ go install . ./cmd/...
 To update your version of `lnd` to the latest version run the following 
 commands:
 ```
-cd $GOPATH/src/github.com/lightningnetwork/lnd
+cd $GOPATH/src/github.com/samvrlewis/lnd
 git pull && glide install
 go install . ./cmd/...
 ```
@@ -214,4 +214,4 @@ for Litecoin accordingly.
 # Accurate as of:
 - _roasbeef/btcd commit:_ `f8c02aff4e7a807ba0c1349e2db03695d8e790e8` 
 - _roasbeef/btcutil commit:_ `a259eaf2ec1b54653cdd67848a41867f280797ee` 
-- _lightningnetwork/lnd commit:_ `08de2becf8d77fae192205172c4fb17bb09bd0dbf49e64aa323b2fcbf9fe2a35`
+- _samvrlewis/lnd commit:_ `08de2becf8d77fae192205172c4fb17bb09bd0dbf49e64aa323b2fcbf9fe2a35`

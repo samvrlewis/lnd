@@ -1,9 +1,9 @@
 lnrpc
 =====
 
-[![Build Status](http://img.shields.io/travis/lightningnetwork/lnd.svg)](https://travis-ci.org/lightningnetwork/lnd) 
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lightningnetwork/lnd/blob/master/LICENSE)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/lightningnetwork/lnd/lnrpc)
+[![Build Status](http://img.shields.io/travis/samvrlewis/lnd.svg)](https://travis-ci.org/samvrlewis/lnd) 
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/samvrlewis/lnd/blob/master/LICENSE)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/samvrlewis/lnd/lnrpc)
 
 This lnrpc package implements both a client and server for `lnd`s RPC system
 which is based off of the high-performance cross-platform
@@ -95,5 +95,5 @@ description):
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/lightningnetwork/lnd/lnrpc
+$ go get -u github.com/samvrlewis/lnd/lnrpc
 ```

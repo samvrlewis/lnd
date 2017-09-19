@@ -28,7 +28,7 @@ type Producer interface {
 // original description of shachain can be found here:
 // https://github.com/rustyrussell/ccan/blob/master/ccan/crypto/shachain/design.txt
 // with supplementary material here:
-// https://github.com/lightningnetwork/lightning-rfc/blob/master/03-transactions.md#per-commitment-secret-requirements
+// https://github.com/samvrlewis/lightning-rfc/blob/master/03-transactions.md#per-commitment-secret-requirements
 type RevocationProducer struct {
 	// root is the element from which we may generate all hashes which
 	// corresponds to the index domain [281474976710655,0].

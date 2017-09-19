@@ -9,7 +9,7 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/go-errors/errors"
-	"github.com/lightningnetwork/lnd/lnwire"
+	"github.com/samvrlewis/lnd/lnwire"
 )
 
 var (

@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/lightningnetwork/lightning-onion"
+	"github.com/samvrlewis/lightning-onion"
 	"github.com/samvrlewis/lnd/autopilot"
 	"github.com/samvrlewis/lnd/brontide"
 	"github.com/samvrlewis/lnd/channeldb"

@@ -38,7 +38,7 @@ type Store interface {
 // revocation store is able to efficiently store N derived shahain elements in
 // a space efficient manner with a space complexity of O(log N). The original
 // description of the storage methodology can be found here:
-// https://github.com/lightningnetwork/lightning-rfc/blob/master/03-transactions.md#efficient-per-commitment-secret-storage
+// https://github.com/samvrlewis/lightning-rfc/blob/master/03-transactions.md#efficient-per-commitment-secret-storage
 type RevocationStore struct {
 	// lenBuckets stores the number of currently active buckets.
 	lenBuckets uint8

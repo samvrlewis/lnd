@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/lightninglabs/neutrino"
-	"github.com/lightningnetwork/lnd/chainntnfs"
+	"github.com/samvrlewis/lnd/chainntnfs"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcwallet/walletdb"
 
@@ -25,11 +25,11 @@ import (
 
 	// Required to auto-register the btcd backed ChainNotifier
 	// implementation.
-	_ "github.com/lightningnetwork/lnd/chainntnfs/btcdnotify"
+	_ "github.com/samvrlewis/lnd/chainntnfs/btcdnotify"
 
 	// Required to auto-register the neutrino backed ChainNotifier
 	// implementation.
-	_ "github.com/lightningnetwork/lnd/chainntnfs/neutrinonotify"
+	_ "github.com/samvrlewis/lnd/chainntnfs/neutrinonotify"
 
 	_ "github.com/roasbeef/btcwallet/walletdb/bdb" // Required to register the boltdb walletdb implementation.
 )

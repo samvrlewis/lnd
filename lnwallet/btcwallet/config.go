@@ -3,7 +3,7 @@ package btcwallet
 import (
 	"path/filepath"
 
-	"github.com/lightningnetwork/lnd/lnwallet"
+	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/roasbeef/btcd/chaincfg"
 	"github.com/roasbeef/btcd/wire"
 	"github.com/roasbeef/btcutil"

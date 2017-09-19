@@ -1,4 +1,4 @@
-package: github.com/lightningnetwork/lnd
+package: github.com/samvrlewis/lnd
 import:
 - package: github.com/boltdb/bolt
   version: ^1.2.1
@@ -55,7 +55,7 @@ import:
   - context
 - package: google.golang.org/grpc
   version: b3ddf786825de56a4178401b7e174ee332173b66
-- package: github.com/lightningnetwork/lightning-onion
+- package: github.com/samvrlewis/lightning-onion
   version: 7625644d9f0584d63d4da902e51b1d7d921022bf
 - package: github.com/grpc-ecosystem/grpc-gateway
   version: f2862b476edcef83412c7af8687c9cd8e4097c0f

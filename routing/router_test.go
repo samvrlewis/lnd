@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lightningnetwork/lnd/channeldb"
+	"github.com/samvrlewis/lnd/channeldb"
 	"github.com/roasbeef/btcd/wire"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/lightningnetwork/lightning-onion"
-	"github.com/lightningnetwork/lnd/lnwire"
+	"github.com/samvrlewis/lightning-onion"
+	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 )
 

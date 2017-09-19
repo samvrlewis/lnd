@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/go-errors/errors"
-	"github.com/lightningnetwork/lnd/lnwallet"
+	"github.com/samvrlewis/lnd/lnwallet"
 	"github.com/roasbeef/btcd/btcec"
 	"github.com/roasbeef/btcd/chaincfg/chainhash"
 	"github.com/roasbeef/btcd/txscript"
