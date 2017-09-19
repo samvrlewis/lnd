@@ -20,7 +20,7 @@ import (
 	"crypto/sha256"
 
 	"github.com/go-errors/errors"
-	"github.com/samvrlewis/lightning-onion"
+	"github.com/lightningnetwork/lightning-onion"
 )
 
 // ChannelGraphSource represent the source of information about the topology of

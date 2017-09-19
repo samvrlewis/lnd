@@ -3,7 +3,7 @@ package htlcswitch
 import (
 	"bytes"
 
-	"github.com/samvrlewis/lightning-onion"
+	"github.com/lightningnetwork/lightning-onion"
 	"github.com/samvrlewis/lnd/lnwire"
 )
 

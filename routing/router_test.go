@@ -12,7 +12,7 @@ import (
 	"github.com/roasbeef/btcd/wire"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/samvrlewis/lightning-onion"
+	"github.com/lightningnetwork/lightning-onion"
 	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
 )

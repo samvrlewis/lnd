@@ -74,7 +74,7 @@ imports:
   subpackages:
   - filterdb
   - headerfs
-- name: github.com/samvrlewis/lightning-onion
+- name: github.com/lightningnetwork/lightning-onion
   version: 7625644d9f0584d63d4da902e51b1d7d921022bf
 - name: github.com/ltcsuite/ltcd
   version: 5f654d5faab99ee2b3488fabba98e5f7a5257ee3

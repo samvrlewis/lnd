@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/samvrlewis/lightning-onion"
+	"github.com/lightningnetwork/lightning-onion"
 	"github.com/samvrlewis/lnd/lnwire"
 )
 

@@ -8,7 +8,7 @@ import (
 	"container/heap"
 
 	"github.com/boltdb/bolt"
-	"github.com/samvrlewis/lightning-onion"
+	"github.com/lightningnetwork/lightning-onion"
 	"github.com/samvrlewis/lnd/channeldb"
 	"github.com/samvrlewis/lnd/lnwire"
 	"github.com/roasbeef/btcd/btcec"
