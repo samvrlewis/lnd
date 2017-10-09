@@ -4,11 +4,8 @@ go:
   - 1.9
 sudo: false
 before_install:
-  - reponame=basename $PWD
-  - srcdir=dirname $PWD
-  - destdir="dirname $srcdir/lightningnetwork"
-  - mv $srcdir $destdir
-  - cd ../../lightningnetwork/$reponame
+  - RepoName=`basename $PWD`; SrcDir=`dirname $PWD`; DestDir="`dirname $SrcDir`/lightningnetwork"
+  - if [[ "$SrcDir" != "$DestDir" ]]; then mv "$SrcDir" "$DestDir"; cd ../../lightningnetwork/$RepoName; export TRAVIS_BUILD_DIR=`dirname $TRAVIS_BUILD_DIR`/$RepoName; fi
 install:
   - GLIDE_TAG=v0.12.3
   - GLIDE_DOWNLOAD="https://github.com/Masterminds/glide/releases/download/$GLIDE_TAG/glide-$GLIDE_TAG-linux-amd64.tar.gz"
