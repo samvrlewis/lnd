@@ -3,6 +3,7 @@ package btcdnotify
 import (
 	"container/heap"
 	"errors"
+	"log"
 	"sync"
 	"sync/atomic"
 	"time"
@@ -181,6 +182,7 @@ func (b *BtcdNotifier) Stop() error {
 	for _, confClients := range b.confNotifications {
 		for _, confClient := range confClients {
 			close(confClient.finConf)
+			close(confClient.updateConf)
 			close(confClient.negativeConf)
 		}
 	}
@@ -554,6 +556,18 @@ func (b *BtcdNotifier) notifyConfs(newBlockHeight int32) {
 	}
 
 	heap.Push(b.confHeap, nextConf)
+
+	// Send an update out to the unconfirmed notifications
+	for _, conf := range b.confHeap.Items() {
+
+		select {
+		case conf.updateConf <- int32(conf.triggerHeight) - newBlockHeight:
+			log.Printf("sent")
+		default:
+			log.Printf("not sent")
+		}
+		log.Printf("hello")
+	}
 }
 
 // checkConfirmationTrigger determines if the passed txSha included at blockHeight
@@ -727,6 +741,7 @@ type confirmationsNotification struct {
 	numConfirmations     uint32
 
 	finConf      chan *chainntnfs.TxConfirmation
+	updateConf   chan int32
 	negativeConf chan int32 // TODO(roasbeef): re-org funny business
 }
 
@@ -740,16 +755,23 @@ func (b *BtcdNotifier) RegisterConfirmationsNtfn(txid *chainhash.Hash,
 		txid:             txid,
 		numConfirmations: numConfs,
 		finConf:          make(chan *chainntnfs.TxConfirmation, 1),
+		updateConf:       make(chan int32, 1),
 		negativeConf:     make(chan int32, 1),
 	}
 
+	// i think this blocks until either we get a quit from b
+	// or until we can send ntfn to the notification registry
+	// we then send to the registry and return to the caller a
+	// confirmationevent object that they can use to listen for
+	// confirmed or negativeconf events
 	select {
-	case <-b.quit:
+	case <-b.quit: //receive from b.quit
 		return nil, ErrChainNotifierShuttingDown
-	case b.notificationRegistry <- ntfn:
+	case b.notificationRegistry <- ntfn: //
 		return &chainntnfs.ConfirmationEvent{
 			Confirmed:    ntfn.finConf,
 			NegativeConf: ntfn.negativeConf,
+			Updates:      ntfn.updateConf,
 		}, nil
 	}
 }

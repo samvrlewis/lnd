@@ -91,6 +91,9 @@ type TxConfirmation struct {
 // Once the txid reaches the specified number of confirmations, the 'Confirmed'
 // channel will be sent upon fulfilling the notification.
 //
+// Updates to the number of confirmations a txid has reached are provided though
+// the 'Updates' channel
+//
 // If the event that the original transaction becomes re-org'd out of the main
 // chain, the 'NegativeConf' will be sent upon with a value representing the
 // depth of the re-org.
@@ -100,6 +103,7 @@ type ConfirmationEvent struct {
 	// details of the channel's confirmation.
 	Confirmed chan *TxConfirmation // MUST be buffered.
 
+	Updates chan int32
 	// TODO(roasbeef): all goroutines on ln channel updates should also
 	// have a struct chan that's closed if funding gets re-org out. Need
 	// to sync, to request another confirmation event ntfn, then re-open

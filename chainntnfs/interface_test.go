@@ -161,7 +161,9 @@ func testMultiConfirmationNotification(miner *rpctest.Harness,
 	select {
 	case <-confIntent.Confirmed:
 		break
-	case <-time.After(20 * time.Second):
+	case <-confIntent.Updates:
+		log.Printf("Got update!")
+	case <-time.After(2 * time.Second):
 		t.Fatalf("confirmation notification never received")
 	}
 }
@@ -232,6 +234,10 @@ func testBatchConfirmationNotification(miner *rpctest.Harness,
 					initialConfHeight, conf.BlockHeight)
 			}
 			continue
+		case <-confIntents[i].Updates:
+			// maybe this is because updates gets more than one notification
+			// written to it before its read?
+			log.Printf("Got update!!")
 		case <-time.After(20 * time.Second):
 			t.Fatalf("confirmation notification never received: %v", numConfs)
 		}
@@ -931,6 +937,7 @@ func TestInterfaces(t *testing.T) {
 	p2pAddr := miner.P2PAddress()
 
 	log.Printf("Running %v ChainNotifier interface tests\n", len(ntfnTests))
+	log.Printf("helllooo")
 	var (
 		notifier chainntnfs.ChainNotifier
 		cleanUp  func()

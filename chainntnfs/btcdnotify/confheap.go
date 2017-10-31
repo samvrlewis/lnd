@@ -25,6 +25,8 @@ func newConfirmationHeap() *confirmationHeap {
 	return &confirmationHeap{confItems}
 }
 
+func (c *confirmationHeap) Items() []*confEntry { return c.items }
+
 // Len returns the number of items in the priority queue. It is part of the
 // heap.Interface implementation.
 func (c *confirmationHeap) Len() int { return len(c.items) }
