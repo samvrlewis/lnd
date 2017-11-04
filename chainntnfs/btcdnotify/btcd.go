@@ -357,6 +357,9 @@ out:
 			// which may have been triggered by this new block.
 			b.notifyConfs(newHeight)
 
+			// Send updates to the yet to be confirmed notifications
+			b.sendUpdates(newHeight)
+
 		case <-b.txUpdateSignal:
 			// A new update is available, so pop the new chain
 			// update from the front of the update queue.
@@ -527,6 +530,29 @@ func (b *BtcdNotifier) notifyBlockEpochs(newHeight int32, newSha *chainhash.Hash
 	}
 }
 
+func (b *BtcdNotifier) sendUpdates(newBlockHeight int32) {
+	// Send an update out to the unconfirmed notifications
+	for _, conf := range b.confHeap.Items() {
+		confs := int32(conf.triggerHeight) - newBlockHeight
+
+		select {
+		case conf.updateConf <- confs:
+			// successfully sent to the channel
+		default:
+			select {
+			case <-conf.updateConf:
+				conf.updateConf <- confs
+			default:
+				// update was read before
+				// read out the stale value, add a fresh one
+				conf.updateConf <- confs
+			}
+
+		}
+		log.Printf("Sent update to %v of %d", conf.txid, confs)
+	}
+}
+
 // notifyConfs examines the current confirmation heap, sending off any
 // notifications which have been triggered by the connection of a new block at
 // newBlockHeight.
@@ -556,18 +582,6 @@ func (b *BtcdNotifier) notifyConfs(newBlockHeight int32) {
 	}
 
 	heap.Push(b.confHeap, nextConf)
-
-	// Send an update out to the unconfirmed notifications
-	for _, conf := range b.confHeap.Items() {
-
-		select {
-		case conf.updateConf <- int32(conf.triggerHeight) - newBlockHeight:
-			log.Printf("sent")
-		default:
-			log.Printf("not sent")
-		}
-		log.Printf("hello")
-	}
 }
 
 // checkConfirmationTrigger determines if the passed txSha included at blockHeight

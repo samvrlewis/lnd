@@ -234,13 +234,10 @@ func testBatchConfirmationNotification(miner *rpctest.Harness,
 					initialConfHeight, conf.BlockHeight)
 			}
 			continue
-		case <-confIntents[i].Updates:
-			// maybe this is because updates gets more than one notification
-			// written to it before its read?
-			log.Printf("Got update!!")
 		case <-time.After(20 * time.Second):
 			t.Fatalf("confirmation notification never received: %v", numConfs)
 		}
+
 	}
 }
 
